@@ -20,3 +20,8 @@ public struct LoginResponseDTO: Codable, Sendable {
         self.userId = userId
     }
 }
+
+#if canImport(Vapor)
+import Vapor
+extension LoginResponseDTO: Content {}
+#endif

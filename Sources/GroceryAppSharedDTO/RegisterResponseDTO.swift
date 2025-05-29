@@ -16,3 +16,9 @@ public struct RegisterResponseDTO: Codable, Sendable {
         self.reason = reason
     }
 }
+
+// Vapor Content conformance - only available when Vapor is imported
+#if canImport(Vapor)
+import Vapor
+extension RegisterResponseDTO: Content {}
+#endif
