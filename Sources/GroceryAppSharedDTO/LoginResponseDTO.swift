@@ -21,7 +21,4 @@ public struct LoginResponseDTO: Codable, Sendable {
     }
 }
 
-#if canImport(Vapor)
-import Vapor
-extension LoginResponseDTO: Content {}
-#endif
+
