@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct LoginResponseDTO: Codable {
+public struct LoginResponseDTO: Codable, Sendable {
     public let error: Bool
     public var reason: String? = nil
     public var token: String? = nil
