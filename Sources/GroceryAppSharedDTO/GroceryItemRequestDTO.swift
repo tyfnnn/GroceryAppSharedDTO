@@ -12,7 +12,7 @@ public struct GroceryItemRequestDTO: Codable, Sendable {
     public let price: Double
     public let quantity: Int
     
-    init(title: String, price: Double, quantity: Int) {
+    public init(title: String, price: Double, quantity: Int) {
         self.title = title
         self.price = price
         self.quantity = quantity
